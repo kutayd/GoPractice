@@ -14,4 +14,30 @@ func main() {
 
 	s := "Learning golang!" // this variable only works in block scope
 	fmt.Println(s)
+
+	car, cost := "Audi", 500000
+	fmt.Println(car, cost)
+
+	var opened = false
+	opened, file := true, "a.txt"
+	_, _ = opened, file
+
+	var (
+		salary float64
+		firstN string
+		lastN  string
+	)
+	fmt.Println(salary, firstN, lastN)
+
+	var a, b, c int
+	fmt.Println(a, b, c)
+
+	// We use short declaration (:=) when we know the initial value
+	// We use normal declaration (var) otherwise
+
+	var i, j int
+	i, j = 5, 8 // multiple assignment
+	j, i = i, j // swap
+	_, _ = i, j
+
 }
